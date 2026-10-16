@@ -6,7 +6,7 @@ The easiest issues to fix were formatting errors reported by Flake8, such as mis
 
 ### 2. Did the static analysis tools report any false positives? If so, describe one example.
 
-During the analysis, Pylint reported warnings about the use of global variables, while Flake8 reported formatting issues. Bandit did not identify any security issues in the tested version. I did not confirm any false positives during this lab. The warnings were reviewed and addressed where appropriate. This demonstrated that static analysis findings should be examined carefully before deciding how to fix them.
+During the analysis, Pylint reported warnings about the use of global variables, while Flake8 reported formatting issues. Bandit did not identify any security issues in the tested version. I did not confirm any false positives during this lab. In the final analysis, Pylint gave the code a score of 10.00/10, Bandit reported no security issues, and Flake8 produced an empty report. This showed me that static analysis tools help identify potential problems, although their findings should always be reviewed carefully.
 
 ### 3. How would you integrate static analysis tools into your actual software development workflow?
 
@@ -14,5 +14,4 @@ I would integrate Pylint, Bandit, and Flake8 into my regular development workflo
 
 ### 4. What tangible improvements did you observe in the code quality, readability, or potential robustness after applying the fixes?
 
-The fixes improved the readability, maintainability, and robustness of the program. Input validation helps prevent invalid meter readings, specific exception handling makes errors easier to diagnose, and proper file handling improves reliability when loading and saving meter data. Formatting corrections made the code more consistent and readable. The final analysis also showed a Pylint score of 10/10, no security findings from Bandit, and the identification of formatting issues through Flake8, demonstrating the value of using multiple static analysis tools.
-
+The fixes improved the readability, maintainability, and robustness of the program. Input validation helps prevent invalid meter readings, specific exception handling makes errors easier to diagnose, and proper file handling improves reliability when loading and saving meter data. Formatting corrections made the code more consistent and readable. The final analysis gave a Pylint score of 10.00/10, Bandit reported no security findings, and Flake8 produced an empty report, indicating no reported style violations.
